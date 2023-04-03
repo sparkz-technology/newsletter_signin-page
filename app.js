@@ -34,7 +34,7 @@ app.post("/",function(req,res){
     // option method for https request
     const Options ={
         method:"POST",
-        auth:"sparkz:2bd32322b6c0571623d0f310caebcc2d-us21"
+        auth:"api:ea71ad220541d19003a981f698b45a33-us21"
     }
     
     // post request to api server
