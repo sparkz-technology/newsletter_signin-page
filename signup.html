@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Newsletter Signup </title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="photo/favicon.ico" >
-</head>
-<body>
-        <div class="box">
-          <h2>Sign In</h2>
-          <p>Sparkz  Technology</p>
-          <form action="/" method="post">
-            <div class="inputBox">
-              <input type="text" name="firstName" required onkeyup="this.setAttribute('value', this.value);" value="">
-              <label>Frist Name</label>
-            </div>
-            <div class="inputBox">
-              <input type="text" name="lastName" required onkeyup="this.setAttribute('value', this.value);" value="">
-              <label>Last Name</label>
-            </div>
-            <div class="inputBox">
-              <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"value="" >
-              <label>Email</label>
-            </div>                
-            <input type="submit" >
-          </form> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="photo/favicon.ico" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="photo/newsrocketlogo.jpg" alt="logo" />
+    </div>
+    <div class="box">
+      <h2>Newsletter Subscription</h2>
+      <p>Sign In</p>
+      <form action="/" method="post">
+        <div class="inputBox">
+          <input
+            type="text"
+            name="firstName"
+            required
+            autocomplete="off"
+            required
+            onkeyup="this.setAttribute('value', this.value);"
+            value=""
+          />
+          <label>Frist Name</label>
         </div>
-</body>
+        <div class="inputBox">
+          <input
+            type="text"
+            name="lastName"
+            required
+            autocomplete="off"
+            required
+            onkeyup="this.setAttribute('value', this.value);"
+            value=""
+          />
+          <label>Last Name</label>
+        </div>
+        <div class="inputBox">
+          <input
+            type="email"
+            name="email"
+            required
+            autocomplete="off"
+            required
+            onkeyup="this.setAttribute('value', this.value);"
+            value=""
+          />
+          <label>Email</label>
+        </div>
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+  <footer>
+    <p>Copyright 2023 Sparkz Technology</p>
+  </footer>
 </html>
