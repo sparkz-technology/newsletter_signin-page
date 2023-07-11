@@ -24,6 +24,4 @@ To run this app, you need to have Node.js and npm installed on your machine. You
 
 To use the app, simply enter your first name, last name and email address in the form and click on the "Subscribe" button. You will be redirected to either a success page or a failure page depending on the result of the API request. You can also check your Mailchimp dashboard to see if the user was added to your list.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
