@@ -19,7 +19,6 @@ app.post("/", function (req, res) {
   const lastName = req.body.lastName;
   const email = req.body.email;
 
-<<<<<<< HEAD
   // geting data structure from api(custom)
   const data = {
     members: [
@@ -49,25 +48,6 @@ app.post("/", function (req, res) {
       res.sendFile(__dirname + "/success.html");
     } else {
       res.sendFile(__dirname + "/failure.html");
-=======
-    // geting data structure from api(custom)
-    const data =  {
-                members:[{email_address:email,
-                status:"subscribed",
-                    merge_fields:{
-                        FNAME:firstName,
-                        LNAME:lastName}
-                }]
-    };
-    // convert the js data to flat json 
-    const jsonData=JSON.stringify(data)
-    //    api endpoint with list id
-    const url="https://us21.api.mailchimp.com/3.0/lists/ef642d774c"
-    // option method for https request
-    const Options ={
-        method:"POST",
-        auth:"apikey:25eaf9b29a05896af463441f3be8f5f4-us21"
->>>>>>> 514e2de3578bf75e303f54a72e0c0259f649ff72
     }
     responce.on("data", function (data) {
       console.log(JSON.parse(data));
@@ -81,14 +61,7 @@ app.post("/failure.html", function (req, res) {
   res.redirect("/");
 });
 
-<<<<<<< HEAD
 app.listen(3000, function () {
   console.log("server is running on 3000.");
   console.log("click here: http://localhost:3000");
 });
-=======
-app.listen(3000,function(){
-    console.log("server is running on 3000.")
-    console.log("click here: http://localhost:3000")
-})
->>>>>>> 514e2de3578bf75e303f54a72e0c0259f649ff72
